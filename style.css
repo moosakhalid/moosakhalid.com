@@ -1,0 +1,225 @@
+/* ── Reset & Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #f9f9f7;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+/* ── Layout ── */
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
+}
+
+/* ── Header ── */
+header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #1a1a1a;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0a0a0a;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin-top: 0.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.contact a {
+  color: #1a56db;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.sep {
+  margin: 0 0.5rem;
+  color: #aaa;
+}
+
+/* ── Summary ── */
+.summary {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+}
+
+/* ── Sections ── */
+section {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+/* ── Jobs ── */
+.job {
+  margin-bottom: 1.75rem;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.company {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #0a0a0a;
+}
+
+.job-title {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  font-weight: 400;
+  margin-top: 0.1rem;
+}
+
+.date {
+  font-size: 0.82rem;
+  color: #888;
+  white-space: nowrap;
+  padding-top: 0.15rem;
+  flex-shrink: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 0.88rem;
+  color: #333;
+  padding: 0.2rem 0 0.2rem 1rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: #bbb;
+}
+
+/* ── Certifications ── */
+.certs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.cert {
+  background: #f4f4f2;
+  border: 1px solid #e4e4e0;
+  border-radius: 4px;
+  padding: 0.35rem 0.75rem;
+  font-size: 0.82rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ── Writing & Projects ── */
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  font-size: 0.88rem;
+  color: #333;
+  padding: 0.25rem 0;
+  border-bottom: 1px solid #f0f0ee;
+}
+
+.links li::before {
+  content: none;
+}
+
+.links a {
+  color: #1a56db;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ── Footer ── */
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e8e8e8;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.75rem;
+  }
+
+  .job-header {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .certs {
+    flex-direction: column;
+  }
+}
